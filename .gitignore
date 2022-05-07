@@ -356,4 +356,5 @@ dist
 .vscode/*.code-snippets
 
 # Ignore code-workspaces
+
 *.code-workspace
