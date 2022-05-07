@@ -1,0 +1,420 @@
+/* forum-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/forum-v14-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/forum-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-100 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-100.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin_cyrillic-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./assets/fonts/roboto-v29-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: rgb(77, 77, 77);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a,
+button,
+li {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  max-inline-size: 100%;
+  block-size: auto;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #eef0f4;
+}
+
+/* Header start */
+.header {
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  font-family: 'Forum', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 97%;
+  text-align: center;
+  color: var(--black);
+}
+
+.header__subtitle {
+  font-family: 'Forum', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 97%;
+  text-align: center;
+  color: var(--black);
+}
+
+.header__hints {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 3px 3px 15px #0008, -3px -3px 15px #fff;
+  padding: 5px;
+}
+
+.header__hint {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 97%;
+  text-align: center;
+  color: var(--black);
+}
+
+/* Header end */
+
+/* Main start */
+
+.main {
+  flex: 1;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.keyboard-input__container {
+  background: #eef0f4;
+  border-radius: 9px;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  padding: 15px;
+}
+
+.keyboard-input {
+  resize: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  font-family: 'Forum', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 97%;
+  color: var(--black);
+}
+
+.keyboard-input::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+.keyboard-input::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.keyboard-input::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.keyboard {
+  width: 65%;
+  border-radius: 9px;
+  box-shadow: -4px -4px 8px #fff, 4px 4px 8px #0002;
+  padding: 15px;
+}
+
+.keyboard__keys {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.keyboard__key {
+  border-radius: 9px;
+  box-shadow: inset 3px 3px 6px #0002, inset -3px -3px 6px #0002;
+  border: 1px solid transparent;
+  height: 50px;
+  width: 5%;
+  max-width: 70px;
+  color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.keyboard__key_wide {
+  width: 10%;
+  max-width: 100px;
+}
+
+.keyboard__key_extra-wide {
+  width: 38%;
+  max-width: 397px;
+}
+
+.keyboard__key_active,
+.keyboard__key:active {
+  box-shadow: 3px 3px 6px #0008, -3px -3px 6px #fff;
+}
+/* Main end */
+
+/* Footer start */
+
+.footer {
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+
+.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.7s;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 38px;
+  color: var(--black);
+}
+
+.github-link:hover {
+  color: var(--grey);
+}
+
+.github-link::before {
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./assets/img/github.png');
+}
+
+/* Footer end */
+
+@media (max-width: 1440px) {
+  .keyboard {
+    width: 69%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .keyboard {
+    width: 69%;
+  }
+}
+
+@media (max-width: 1357px) {
+  .keyboard {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1339px) {
+  .keyboard {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1251px) {
+  .keyboard {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1178px) {
+  .keyboard {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1115px) {
+  .keyboard {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1055px) {
+  .keyboard {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .keyboard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 953px) {
+  .keyboard__key_wide {
+    width: 9%;
+    max-width: 100px;
+  }
+
+  .keyboard__key_extra-wide {
+    width: 30%;
+  }
+}
+
+@media (max-width: 793px) {
+  .keyboard__key_wide {
+    width: 5%;
+    max-width: 100px;
+  }
+
+  .keyboard__key_extra-wide {
+    width: 20%;
+  }
+
+  .keyboard__key {
+    width: 5%;
+    max-width: 70px;
+    font-size: 8px;
+  }
+}
