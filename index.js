@@ -373,6 +373,7 @@ const ru = {
 
 let flagCrlAlt = false;
 let pressed = [];
+const keybordLang = localStorage.getItem('lang');
 
 const KEYBOARD = {
   elements: {
@@ -393,6 +394,10 @@ const KEYBOARD = {
   init() {
     this.elements.main = document.createElement('div');
     this.elements.keysContainer = document.createElement('div');
+
+    if (keybordLang) {
+      this.properties.lang = keybordLang;
+    }
 
     this.elements.main.classList.add('keyboard');
     this.elements.keysContainer.classList.add('keyboard__keys');
@@ -590,7 +595,7 @@ const KEYBOARD = {
     } else {
       this.properties.lang = 'en';
     }
-
+    localStorage.setItem('lang', this.properties.lang);
     this.elements.keysContainer.innerHTML = '';
     this.elements.keysContainer.appendChild(this.createKeys());
   },
