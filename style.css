@@ -160,15 +160,37 @@ body {
   color: var(--black);
 }
 
-.header__subtitle{
+.header__subtitle {
   font-family: 'Forum', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 97%;
   text-align: center;
   color: var(--black);
 }
+
+.header__hints {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 3px 3px 15px #0008, -3px -3px 15px #fff;
+  padding: 5px;
+}
+
+.header__hint {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 97%;
+  text-align: center;
+  color: var(--black);
+}
+
 /* Header end */
 
 /* Main start */
@@ -254,17 +276,18 @@ body {
 }
 
 .keyboard__key_wide {
-    width: 10%;
-    max-width: 100px;
+  width: 10%;
+  max-width: 100px;
 }
 
-.keyboard__key_extra-wide{
+.keyboard__key_extra-wide {
   width: 38%;
   max-width: 397px;
 }
 
-.keyboard__key_active, .keyboard__key:active {
-    box-shadow: 3px 3px 6px #0008, -3px -3px 6px #fff;
+.keyboard__key_active,
+.keyboard__key:active {
+  box-shadow: 3px 3px 6px #0008, -3px -3px 6px #fff;
 }
 /* Main end */
 
