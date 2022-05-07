@@ -336,3 +336,85 @@ body {
 }
 
 /* Footer end */
+
+@media (max-width: 1440px) {
+  .keyboard {
+    width: 69%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .keyboard {
+    width: 69%;
+  }
+}
+
+@media (max-width: 1357px) {
+  .keyboard {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1339px) {
+  .keyboard {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1251px) {
+  .keyboard {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1178px) {
+  .keyboard {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1115px) {
+  .keyboard {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1055px) {
+  .keyboard {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .keyboard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 953px) {
+  .keyboard__key_wide {
+    width: 9%;
+    max-width: 100px;
+  }
+
+  .keyboard__key_extra-wide {
+    width: 30%;
+  }
+}
+
+@media (max-width: 793px) {
+  .keyboard__key_wide {
+    width: 5%;
+    max-width: 100px;
+  }
+
+  .keyboard__key_extra-wide {
+    width: 20%;
+  }
+
+  .keyboard__key {
+    width: 5%;
+    max-width: 70px;
+    font-size: 8px;
+  }
+}
